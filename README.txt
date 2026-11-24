@@ -4,3 +4,5 @@ Actions > Build Android APK > Artifacts > DouyinDownloader-APK.
 Paste share text or share it directly to the app. Analyze follows HTTPS redirects in WebView.
 Only explicit downloadable video addresses with positive download permission, HTML download links, official MP4 download events and direct HTTPS MP4 links are supported. Does not extract playback streams or bypass restrictions. The exact shared video and live Android build have not been tested. If the site does not expose a download, use the official app's save feature where available.
 Debug signatures can differ across GitHub runners; uninstall old debug APK before installing if signature mismatch (app settings may be lost).
+
+V2.1: improved diagnostics, match video ID, use original playback URL only if metadata explicitly permits downloads, prefer official download address. No watermark removal or access-control bypass. Test parser with: node tests/parser.test.js (synthetic data only). APK and live Douyin not tested in this environment.
