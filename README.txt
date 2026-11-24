@@ -1,5 +1,6 @@
-Douyin Downloader - prototype Android 10+
-Mo thu muc nay bang Android Studio, dung JDK 17, Android SDK 35.
-Cho Gradle Sync hoan tat. Chon Build > Build App Bundle(s) / APK(s) > Build APK(s).
-APK debug: app/build/outputs/apk/debug/app-debug.apk.
-Ung dung mo link HTTPS trong WebView, tai link MP4 truc tiep hoac download MP4 do trang cung cap. Khong co bo phan trich xuat link MP4 tu link chia se Douyin, khong vuot han che tai xuong. Khong can server rieng. Chua duoc bien dich hay kiem thu trong moi truong nay. Neu Android Studio yeu cau Gradle, dung Gradle 8.9.
+Douyin Downloader 2.0 (Android 10+)
+Upload files to GitHub (repository root), including .github/workflows/build.yml.
+Actions > Build Android APK > Artifacts > DouyinDownloader-APK.
+Paste share text or share it directly to the app. Analyze follows HTTPS redirects in WebView.
+Only explicit downloadable video addresses with positive download permission, HTML download links, official MP4 download events and direct HTTPS MP4 links are supported. Does not extract playback streams or bypass restrictions. The exact shared video and live Android build have not been tested. If the site does not expose a download, use the official app's save feature where available.
+Debug signatures can differ across GitHub runners; uninstall old debug APK before installing if signature mismatch (app settings may be lost).
